@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-    font-size: 10px;
+	font-size: 10px;
 }
 
 h1,
@@ -10,31 +10,36 @@ h4,
 h5,
 h6 {
 	font-family: 'Roboto Condensed', sans-serif;
-    font-size: 2.5rem;
+	font-size: 2.5rem;
+	margin: 0;
+	padding: 0;
 }
 
-p, input, a {
-    font-family: 'Cabin', sans-serif;
-    font-size: 1rem;
+p,
+input,
+a {
+	font-family: 'Cabin', sans-serif;
+	font-size: 1rem;
+
+	margin: 0;
+	padding: 0;
 }
 
 html {
 	height: 100vh;
 	width: 100vw;
 
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
+	margin: 7vh 0 0 0;
+	padding: 0;
 
-    border: 2px solid pink;
-    margin: 7vh 0 0 0;
-    padding: 0;
-
-    overflow-x: hidden;
+	overflow-x: hidden;
 }
 
 #header {
@@ -46,10 +51,10 @@ body {
 	width: 100%;
 
 	display: flex;
-    background-color: white;
-    z-index: 999;
+	background-color: white;
+	z-index: 999;
 
-    border-bottom: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 .logo-container {
@@ -61,7 +66,7 @@ body {
 	justify-content: space-around;
 	align-items: center;
 
-    padding: 5px;
+	padding: 5px;
 }
 
 #header-img {
@@ -70,7 +75,7 @@ body {
 }
 
 #logo-company-name {
-    text-align: center;
+	text-align: center;
 }
 
 #nav-bar {
@@ -83,78 +88,169 @@ body {
 }
 
 #nav-bar > .nav-link {
-    width: 100%;
+	width: 100%;
 
-    font-size: 2rem;
+	font-size: 2rem;
 
-    text-align: center;
-    text-decoration: none;
+	text-align: center;
+	text-decoration: none;
 }
 
 main {
-    height: 100%;
-    width: 100%;
+	height: 100%;
+	width: 100%;
 
-    display: grid;
-    grid-template-rows: 1fr 3fr 2fr 2fr;
+	display: grid;
+	grid-template-rows: 1fr 3fr 2fr 2fr;
 }
 
-.form {
+#section-email {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 
+	height: 100%;
+	width: 100%;
 }
 
 #section-features {
-    border: 1px solid black;
-    width: 100%;
-    height: 100%;
-
-    padding: 0 20px;
-    margin: 2rem 0;
+	border: 1px solid black;
+	width: 100%;
+	height: 100%;
 }
 
 .features-list {
-    list-style-type: none;
-    border: 1px solid green;
-    padding-left: 4rem;
-}
+	list-style-type: none;
+	height: 100%;
 
-.features-list-item {
-    border: 1px solid pink;
-}
+	border: 1px solid pink;
 
-.features-list-item .fa-solid {
-    font-size: 6rem;
-    color: silver;
-    border: 1px solid cyan;
-    margin-right: 3rem;
+	margin: 0;
 
-    height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
 
 .features-list-item > * {
-    border: 1px solid cyan;
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.features-list-item {
+	display: flex;
+	flex-direction: row;
+
+	height: 8rem;
+}
+
+.features-list-item .fa-solid {
+	font-size: 5rem;
+	color: silver;
 }
 
 .feature-icon-container {
-    display: flex;
-    align-items: center;
+	height: 100%;
+	aspect-ratio: 1 / 1;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin-right: 3rem;
 }
 
-.feature-icon-container h3::before {
-    content: " --- ";
+.feature-text-container {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+#section-example {
+	border: 1px solid green;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+	padding: 5rem 0;
+}
+
+#section-products {
+	width: 100%;
+	height: 100%;
+
+	border: 1px solid blue;
+}
+
+.subscription-tiers {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+
+	justify-content: space-evenly;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+}
+
+.subscription-tier-card {
+	height: 80%;
+	width: 18rem;
+
+	border: 1px solid silver;
+
+	display: flex;
+	flex-direction: column;
+
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+
+.product-name-container {
+    
+}
+ 
+ .product-feature-container {
+     width: 100%;
+ }
+
+.product-purchase-button {
+	padding: 0 20px;
+	height: 40px;
+	font-size: 1.25rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	border: 3px black solid;
+	border-radius: 2px;
+	background: transparent;
+	background-color: greenyellow;
+	cursor: pointer;
+}
+
+.product-purchase-button:hover {
+    background-color: rgb(168, 207, 109);
+    transition-duration: 0.1s;
+}
+
+
 
 @media only screen and (max-width: 393px) {
-    * {
-        font-size: 8px;
-    }
-    p, input, a {
-        font-family: 'Cabin', sans-serif;
-        font-size: 1.8rem;
-    }
-    #logo-company-name {
-        text-align: center;
-    }
+	* {
+		font-size: 8px;
+	}
+	p,
+	input,
+	a {
+		font-family: 'Cabin', sans-serif;
+		font-size: 1.8rem;
+	}
+	#logo-company-name {
+		text-align: center;
+	}
 }
