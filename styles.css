@@ -15,9 +15,13 @@ h6 {
 	padding: 0;
 }
 
+h3 {
+	font-size: 1.75rem;
+}
+
 p,
 input,
-a {
+a, li {
 	font-family: 'Cabin', sans-serif;
 	font-size: 1rem;
 
@@ -51,10 +55,7 @@ body {
 	width: 100%;
 
 	display: flex;
-	background-color: white;
 	z-index: 999;
-
-	border-bottom: 1px solid black;
 }
 
 .logo-container {
@@ -85,6 +86,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+
+	background-color: white;
 }
 
 #nav-bar > .nav-link {
@@ -106,7 +109,7 @@ main {
 
 #section-email {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: column;
 
@@ -115,16 +118,16 @@ main {
 }
 
 #section-features {
-	border: 1px solid black;
 	width: 100%;
 	height: 100%;
+
+	display: flex;
+	justify-content: center;
 }
 
 .features-list {
 	list-style-type: none;
 	height: 100%;
-
-	border: 1px solid pink;
 
 	margin: 0;
 
@@ -169,7 +172,6 @@ main {
 }
 
 #section-example {
-	border: 1px solid green;
 
 	display: flex;
 	justify-content: center;
@@ -184,7 +186,10 @@ main {
 	width: 100%;
 	height: 100%;
 
-	border: 1px solid blue;
+	display: flex;
+	align-items: center;
+
+	flex-wrap: wrap;
 }
 
 .subscription-tiers {
@@ -192,53 +197,67 @@ main {
 	display: flex;
 	flex-direction: row;
 
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 
+	gap: 10%;
 	width: 100%;
 	height: 100%;
 }
 
 .subscription-tier-card {
-	height: 80%;
+	height: 90%;
 	width: 18rem;
+	min-width: 150px;
 
 	border: 1px solid silver;
 
-	display: flex;
-	flex-direction: column;
-
-    justify-content: space-between;
-    padding: 2rem 0;
+	display: grid;
+	grid-template-rows: 1fr 3fr 1fr;
+	justify-items: center;
 }
 
-.product-name-container {
-    
+.product-header-container {
+	width: 100%;
+	padding-left: 5%;
 }
- 
- .product-feature-container {
-     width: 100%;
- }
+
+.product-feature-container {
+	width: 100%;
+	
+	list-style-type: none;
+
+	padding-left: 10%;
+}
+
+.product-feature {
+	margin: 1rem 0;
+	font-size: 1.35rem;
+
+}
 
 .product-purchase-button {
-	padding: 0 20px;
 	height: 40px;
-	font-size: 1.25rem;
-	font-weight: 900;
-	text-transform: uppercase;
+	width: 95%;
+	
+	padding: 0 20px;
+	
+	background-color: greenyellow;
+	
 	border: 3px black solid;
 	border-radius: 2px;
-	background: transparent;
-	background-color: greenyellow;
+	
+	font-size: 1.25rem;
+	font-weight: 900;
+	
 	cursor: pointer;
+	text-transform: uppercase;
 }
 
 .product-purchase-button:hover {
-    background-color: rgb(168, 207, 109);
-    transition-duration: 0.1s;
+	background-color: rgb(168, 207, 109);
+	transition-duration: 0.1s;
 }
-
-
 
 @media only screen and (max-width: 393px) {
 	* {

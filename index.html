@@ -15,17 +15,17 @@
 				<h1 id="logo-company-name">RPG Guide</h1>
 			</div>
 			<nav id="nav-bar">
-				<a href="" class="nav-link">Quest Milestones</a>
-				<a href="" class="nav-link">Quest Walkthrough</a>
-				<a href="" class="nav-link">Subscription Plans</a>
+				<a href="#section-features" class="nav-link">Quest Milestones</a>
+				<a href="#section-example" class="nav-link">Quest Walkthrough</a>
+				<a href="#section-products" class="nav-link">Subscription Plans</a>
 			</nav>
 		</header>
 		<main>
 			<section id="section-email">
-				<h2>Boomy, Hurty, Ouchie. We got it.</h2>
+				<h2>Join the adventure. HUZZAH!</h2>
 				<form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
-					<input type="email" id="email" placeholder="Enter your email address" required />
-					<input type="submit" value="Get Discounts" />
+					<input type="email" id="email" name="email" placeholder="Enter your email address" required />
+					<input type="submit" id="submit" value="Get Discounts" />
 				</form>
 			</section>
 			<section id="section-features">
@@ -61,6 +61,7 @@
 			</section>
 			<section id="section-example">
 				<iframe
+					id="video"
 					width="560"
 					height="315"
 					src="https://www.youtube.com/embed/SY3y6zNTiLs"
@@ -73,20 +74,51 @@
 			<section id="section-products">
 				<ul class="subscription-tiers">
 					<li class="subscription-tier-card">
-						<div class="product-name-container">
-                            <h2 class="product-name">ProductName</h2>
-                        </div>
-						<h3 class="product-price">$1000</h3>
-						<div class="product-feature-container">
-							<p class="product-feature">Cheats</p>
-							<p class="product-feature">Map</p>
-							<p class="product-feature">Discord Access</p>
+						<div class="product-header-container">
+							<h2 class="product-name">Peasant</h2>
+							<h3 class="product-price">$1000</h3>
 						</div>
+						<ul class="product-feature-container">
+							<li class="product-feature">Discord Access</li>
+						</ul>
 						<button class="product-purchase-button">PURCHASE</button>
 					</li>
-					<li class="subscription-tier-card"> </li>
-					<li class="subscription-tier-card"> </li>
-					<li class="subscription-tier-card"> </li>
+					<li class="subscription-tier-card">
+						<div class="product-header-container">
+							<h2 class="product-name">Squire</h2>
+							<h3 class="product-price">$1900</h3>
+						</div>
+						<ul class="product-feature-container">
+							<li class="product-feature">Discord Access</li>
+							<li class="product-feature">Secret Item Maps</li>
+						</ul>
+						<button class="product-purchase-button">PURCHASE</button>
+					</li>
+					<li class="subscription-tier-card">
+						<div class="product-header-container">
+							<h2 class="product-name">Knight</h2>
+							<h3 class="product-price">$2650</h3>
+						</div>
+						<ul class="product-feature-container">
+							<li class="product-feature">Discord Access</li>
+							<li class="product-feature">Secret Item Maps</li>
+							<li class="product-feature">All Secret Endings</li>
+						</ul>
+						<button class="product-purchase-button">PURCHASE</button>
+					</li>
+					<li class="subscription-tier-card">
+						<div class="product-header-container">
+							<h2 class="product-name">Realm Ruler</h2>
+							<h3 class="product-price">$2800</h3>
+						</div>
+						<ul class="product-feature-container">
+							<li class="product-feature">Discord Access</li>
+							<li class="product-feature">Secret Item Maps</li>
+							<li class="product-feature">All Secret Endings</li>
+							<li class="product-feature">Ultimate Exploits Guide</li>
+						</ul>
+						<button class="product-purchase-button">PURCHASE</button>
+					</li>
 				</ul>
 			</section>
 		</main>
